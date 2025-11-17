@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .page {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .page>div {
+            border: 1px solid gray;
+        }
+
+        /* approche qui impose un nombre fixe de colonne */
+        .main {
+            flex: 1;
+            min-height: 10vh;
+            display: grid;
+            grid-template-columns: 100px auto 100px;
+            border: none;
+            gap: 10px;
+        }
+
+        .main>div {
+            border: 1px solid gray;
+        }
+
+        .scrollSection {
+            overflow-y: auto;
+        }
+
+        .justifiedText {
+            text-align: justify;
+            margin-top: var(--gap);
+        }
+
+        .header,
+        .footer {
+            padding: 10px;
+            height: 40px;
+            font-size: 1.5em;
+            font-weight: bolder;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="header">Header</div>
+        <div class="main">
+
+            <div class="sidebar">Sidebar</div>
+            <div class="scrollSection justifiedText">main
+                <p class="justifiedText">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum autem quasi, a qui non voluptatibus
+                    in
+                    ipsum minima cupiditate iusto quis perferendis ipsa exercitationem unde minus est laborum eum cum!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum autem quasi, a qui non voluptatibus
+                    in
+                    ipsum minima cupiditate iusto quis perferendis ipsa exercitationem unde minus est laborum eum cum!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum autem quasi, a qui non voluptatibus
+                    in
+                    ipsum minima cupiditate iusto quis perferendis ipsa exercitationem unde minus est laborum eum cum!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum autem quasi, a qui non voluptatibus
+                    in
+                    ipsum minima cupiditate iusto quis perferendis ipsa exercitationem unde minus est laborum eum cum!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum autem quasi, a qui non voluptatibus
+                    in
+                    ipsum minima cupiditate iusto quis perferendis ipsa exercitationem unde minus est laborum eum cum!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum autem quasi, a qui non voluptatibus
+                    in
+                    ipsum minima cupiditate iusto quis perferendis ipsa exercitationem unde minus est laborum eum cum!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum autem quasi, a qui non voluptatibus
+                    in
+                    ipsum minima cupiditate iusto quis perferendis ipsa exercitationem unde minus est laborum eum cum!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum autem quasi, a qui non voluptatibus
+                    in
+                    ipsum minima cupiditate iusto quis perferendis ipsa exercitationem unde minus est laborum eum cum!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum autem quasi, a qui non voluptatibus
+                    in
+                    ipsum minima cupiditate iusto quis perferendis ipsa exercitationem unde minus est laborum eum cum!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum autem quasi, a qui non voluptatibus
+                    in
+                    ipsum minima cupiditate iusto quis perferendis ipsa exercitationem unde minus est laborum eum cum!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum autem quasi, a qui non voluptatibus
+                    in
+                    ipsum minima cupiditate iusto quis perferendis ipsa exercitationem unde minus est laborum eum cum!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum autem quasi, a qui non voluptatibus
+                    in
+                    ipsum minima cupiditate iusto quis perferendis ipsa exercitationem unde minus est laborum eum cum!
+                </p>
+            </div>
+            <div class="sidebar">Sidebar</div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+
+</body>
+
+</html>
